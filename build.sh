@@ -9,7 +9,7 @@ done
 echo "---"
 
 # remove the default firefox (from fedora) in favor of the flatpak
-rpm-ostree override remove firefox firefox-langpacks
+rpm-ostree override remove firefox firefox-langpacks gnome-tour
 
 repos=$(yq '.extrarepos[]' < /usr/etc/ublue-recipe.yml)
 if [[ -n "$repos" ]]; then
@@ -19,6 +19,12 @@ if [[ -n "$repos" ]]; then
     done
     echo "---"
 fi
+
+# Installing VsCode
+curl -L https://go.microsoft.com/fwlink/?LinkID=760868 -o /tmp/vscode.rpm && \
+    rpm-ostree install /tmp/vscode.rpm && \
+    rm /tmp/vscode.rpm
+
 
 echo "-- Installing RPMs defined in recipe.yml --"
 rpm_packages=$(yq '.rpms[]' < /usr/etc/ublue-recipe.yml)

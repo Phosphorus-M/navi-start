@@ -71,3 +71,17 @@ update:
 
   echo "Updating Distroboxes..."
   distrobox upgrade -a
+
+custom:
+  flatpak install -y --user \\
+  com.raggesilver.BlackBox \\
+  io.github.realmazharhussain.GdmSettings \\
+  io.github.celluloid_player.Celluloid \\
+  com.github.rafostar.Clapper \\
+  io.dbeaver.DBeaverCommunity \\
+  org.gnome.FontManager \\
+  com.github.calo001.fondo \\
+  com.github.hluk.copyq \\
+  org.flameshot.Flameshot \\
+  com.getpostman.Postman \\
+  com.mattjakeman.ExtensionManager
