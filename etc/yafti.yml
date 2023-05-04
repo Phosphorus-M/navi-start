@@ -1,4 +1,4 @@
-title: Welcome to uBlue
+title: Welcome to NaviStart
 properties:
   mode: "run-on-change"
 screens:
@@ -51,7 +51,7 @@ screens:
             - Disk Usage Analyzer: org.gnome.baobab
             - Clocks: org.gnome.clocks
             - Picture Viewer: org.gnome.eog
-            - Font Viewer: org.gnome.font-viewer
+            - Font Manager: org.gnome.FontManager
             - Font Downloader: org.gustavoperedo.FontDownloader
         Web Browsers:
           description: Additional browsers to complement Firefox

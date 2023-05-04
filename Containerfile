@@ -23,6 +23,9 @@ COPY ${RECIPE} /usr/etc/ublue-recipe.yml
 # copied from the official container image as it's not avaible as an rpm
 COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
 
+# Download VSCode in format rpm
+RUN curl -L "https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64" -o vscode.rpm && rpm-ostree install ./vscode.rpm
+
 # copy and run the build script
 COPY build.sh /tmp/build.sh
 RUN chmod +x /tmp/build.sh && /tmp/build.sh
