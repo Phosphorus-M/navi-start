@@ -39,7 +39,7 @@ setup-pwa:
 
 setup-gaming:
   echo 'Setting up gaming experience ... lock and load.'
-  flatpak install -y --user \\
+  flatpak install flathub -y \\
   com.discordapp.Discord \\
   com.feaneron.Boatswain \\
   org.freedesktop.Platform.VulkanLayer.MangoHud//22.08 \\

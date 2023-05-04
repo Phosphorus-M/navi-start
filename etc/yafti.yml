@@ -5,7 +5,7 @@ screens:
   first-screen:
     source: yafti.screen.title
     values:
-      title: "Welcome to uBlue (Alpha)"
+      title: "Welcome to NaviStart (Alpha)"
       icon: "/path/to/icon"
       description: |
         Pick some applications to get started
@@ -60,6 +60,7 @@ screens:
             - Brave: com.brave.Browser
             - Google Chrome: com.google.Chrome
             - Microsoft Edge: com.microsoft.Edge
+            - Epiphany | Gnome web: org.gnome.Epiphany
             - Opera: com.opera.Opera
         Gaming:
           description: "Rock and Stone!"
@@ -92,6 +93,34 @@ screens:
             - Gstreamer for OBS: com.obsproject.Studio.Plugin.Gstreamer
             - Gstreamer VAAPI for OBS: com.obsproject.Studio.Plugin.GStreamerVaapi
             - Boatswain for Streamdeck: com.feaneron.Boatswain
+        Coding:
+          description: Tools for the Developer
+          default: false
+          packages:
+            - Android Studio: com.google.AndroidStudio
+            - Arduino IDE v2: cc.arduino.IDE2
+            - Postman: com.getpostman.Postman
+            - Visual Studio Code: com.visualstudio.code
+            - PyCharm: com.jetbrains.PyCharm-Community
+            - Clion: com.jetbrains.CLion
+            - Goland: com.jetbrains.GoLand
+            - IntelliJ IDEA Community: com.jetbrains.IntelliJ-IDEA-Community
+            - IntelliJ IDEA Ultimate: com.jetbrains.IntelliJ-IDEA-Ultimate
+            - Eclipse: org.eclipse.Java
+            - Rider: com.jetbrains.Rider
+            - WebStorm: com.jetbrains.WebStorm
+            - DataGrip: com.jetbrains.DataGrip
+            - PhpStorm: com.jetbrains.PhpStorm
+            - DBeaver: io.dbeaver.DBeaverCommunity
+            - GitKraken: com.axosoft.GitKraken
+            - Github Desktop: io.github.shiftey.Desktop
+            - Builder: org.gnome.Builder
+            - Netbeans: org.apache.netbeans
+            - Guiscrcpy: in.srev.guiscrcpy
+            - Godot: org.godotengine.Godot
+            - Unity Hub: com.unity.UnityHub
+            - Gaphor: org.gaphor.Gaphor
+            - Beekeeper Studio: io.beekeeperstudio.Studio
 
   final-screen:
     source: yafti.screen.title
@@ -106,4 +135,4 @@ screens:
         - "Join the Discord Community":
             run: /usr/bin/xdg-open https://discord.gg/XjG48C7VHx
       description: |
-        Thanks for trying uBlue, we hope you enjoy it!
+        Thanks for trying a uBlue fork, we hope you enjoy it!

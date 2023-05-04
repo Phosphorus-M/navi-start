@@ -20,12 +20,6 @@ if [[ -n "$repos" ]]; then
     echo "---"
 fi
 
-# Installing VsCode
-wget -O /tmp/vscode.rpm https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64 && \
-    rpm-ostree install /tmp/vscode.rpm && \
-    rm /tmp/vscode.rpm
-
-
 echo "-- Installing RPMs defined in recipe.yml --"
 rpm_packages=$(yq '.rpms[]' < /usr/etc/ublue-recipe.yml)
 for pkg in $(echo -e "$rpm_packages"); do \
