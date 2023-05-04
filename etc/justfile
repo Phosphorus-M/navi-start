@@ -73,7 +73,7 @@ update:
   distrobox upgrade -a
 
 custom:
-  flatpak install -y --user \\
+  flatpak install flathub -y \\
   com.raggesilver.BlackBox \\
   io.github.realmazharhussain.GdmSettings \\
   io.github.celluloid_player.Celluloid \\

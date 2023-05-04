@@ -21,7 +21,7 @@ if [[ -n "$repos" ]]; then
 fi
 
 # Installing VsCode
-curl -L https://go.microsoft.com/fwlink/?LinkID=760868 -o /tmp/vscode.rpm && \
+curl -L https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64 -o /tmp/vscode.rpm && \
     rpm-ostree install /tmp/vscode.rpm && \
     rm /tmp/vscode.rpm
 
