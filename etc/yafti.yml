@@ -74,16 +74,20 @@ screens:
             - Steam: com.valvesoftware.Steam
             - Gamescope for Steam: com.valvesoftware.Steam.Utility.gamescope
             - Proton Updater for Steam: net.davidotek.pupgui2
+            - mGBA: io.mgba.mGBA
         Office:
           description: Bow to Capitalism
           default: false
           packages:
             - LibreOffice: org.libreoffice.LibreOffice
+            - Zoom: us.zoom.Zoom
             - Obsidian: md.obsidian.Obsidian
             - OnlyOffice: org.onlyoffice.desktopeditors
             - Slack: com.slack.Slack
             - Standard Notes: org.standardnotes.standardnotes
             - Thunderbird Email: org.mozilla.Thunderbird
+            - Foliate: com.github.johnfactotum.Foliate
+            - Figma: io.github.Figma_Linux.figma_linux
         Streaming:
           description: Stream to the Internet
           default: false
@@ -97,9 +101,11 @@ screens:
           description: Tools for the Developer
           default: false
           packages:
+            - Blackbox: com.raggesilver.BlackBox
             - Android Studio: com.google.AndroidStudio
             - Arduino IDE v2: cc.arduino.IDE2
             - Postman: com.getpostman.Postman
+            - Pods: com.github.marhkb.Pods
             - Visual Studio Code: com.visualstudio.code
             - PyCharm: com.jetbrains.PyCharm-Community
             - Clion: com.jetbrains.CLion
@@ -112,6 +118,7 @@ screens:
             - DataGrip: com.jetbrains.DataGrip
             - PhpStorm: com.jetbrains.PhpStorm
             - DBeaver: io.dbeaver.DBeaverCommunity
+            - MariaDB Client: io.dbeaver.DBeaverCommunity.Client.mariadb
             - GitKraken: com.axosoft.GitKraken
             - Github Desktop: io.github.shiftey.Desktop
             - Builder: org.gnome.Builder
@@ -121,6 +128,43 @@ screens:
             - Unity Hub: com.unity.UnityHub
             - Gaphor: org.gaphor.Gaphor
             - Beekeeper Studio: io.beekeeperstudio.Studio
+        Customization:
+          description: Tools for the customization
+          default: false
+          packages:
+            - Gradience: com.github.GradienceTeam.Gradience
+            - Fondo: com.github.calo001.fondo
+            - GDM Settings: io.github.realmazharhussain.GdmSettings
+        Misc:
+          description: Other apps
+          default: false
+          packages:
+            - CopyQ: com.github.hluk.copyq
+            - Image Converter: io.gitlab.adhami3310.Converter
+            - Upscaler: io.gitlab.theevilskeleton.Upscaler
+            - Smile: it.mijorus.smile
+            - Flameshot: org.flameshot.Flameshot
+            - LiveCaptions: net.sapples.LiveCaptions
+            - TubeConverter: org.nickvision.tubeconverter
+        Multimedia:
+          description: Apps to enjoy your media
+          default: false
+          packages:
+            - Clapper: com.github.rafostar.Clapper
+            - Stremio: com.stremio.Stremio
+            - Shortwave: de.haeckerfelix.Shortwave
+            - Amberol: io.bassi.Amberol
+            - Celluloid: io.github.celluloid_player.Celluloid
+            - Resonance: io.github.nate_xyz.Resonance
+        Editing:
+          description: Apps to edit
+          default: false
+          packages:
+            - Flowblade: io.github.jliljebl.Flowblade
+            - Audacity: org.audacityteam.Audacity
+            - Pitivi: org.pitivi.Pitivi
+            - Telegram Desktop: org.telegram.desktop
+            - Kdenlive: org.kde.kdenlive
 
   final-screen:
     source: yafti.screen.title
