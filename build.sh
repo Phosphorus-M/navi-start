@@ -27,6 +27,26 @@ if [[ -n "$repos" ]]; then
     echo "---"
 fi
 
+# Setting up zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Installing NVM
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+echo -e '\n\nexport NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion' >> .zshrc
+
+# Installing Deno
+
+curl -fsSL https://deno.land/x/install/install.sh | sh
+echo -e '
+  export DENO_INSTALL="/var/home/phosphorus/.deno"
+  export PATH="$DENO_INSTALL/bin:$PATH"
+' >> .zshrc
+
+# Setting up Docker
+echo "docker:x:998:$USER" | tee -a /etc/group
+
 echo "-- Installing RPMs defined in recipe.yml --"
 rpm_packages=$(yq '.rpms[]' < /usr/etc/ublue-recipe.yml)
 for pkg in $(echo -e "$rpm_packages"); do \
