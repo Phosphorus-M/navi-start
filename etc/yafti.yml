@@ -145,6 +145,7 @@ screens:
             - Smile: it.mijorus.smile
             - Flameshot: org.flameshot.Flameshot
             - LiveCaptions: net.sapples.LiveCaptions
+            - Bitwarden: com.bitwarden.desktop
             - TubeConverter: org.nickvision.tubeconverter
         Multimedia:
           description: Apps to enjoy your media
