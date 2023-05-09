@@ -58,6 +58,7 @@ rpms:
   - make
   - mold
   - llvm
+  - zenity
 
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.

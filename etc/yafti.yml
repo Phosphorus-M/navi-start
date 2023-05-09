@@ -181,3 +181,11 @@ screens:
             run: /usr/bin/xdg-open https://discord.gg/XjG48C7VHx
       description: |
         Thanks for trying a uBlue fork, we hope you enjoy it!
+  finishing-installation:
+    source: yafti.screen.consent
+    values:
+      title: Finishing installation
+      description: |
+        We are finishing some details
+      actions:
+        - run: /usr/bin/bash /etc/finish.sh
