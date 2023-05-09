@@ -2,7 +2,7 @@ ln -sf $XDG_RUNTIME_DIR/{app/com.discordapp.Discord,}/discord-ipc-0
 mkdir -p ~/.config/user-tmpfiles.d
 echo 'L %t/discord-ipc-0 - - - - app/com.discordapp.Discord/discord-ipc-0' > ~/.config/user-tmpfiles.d/discord-rpc.conf
 systemctl --user enable --now systemd-tmpfiles-setup.service
-(
+# (
     echo "# Installing Rust"
     curl https://sh.rustup.rs -sSf | sh -s -- -y
     if [ "$?" != 0 ] ; then
@@ -49,9 +49,9 @@ systemctl --user enable --now systemd-tmpfiles-setup.service
     echo "docker:x:998:$USER" | sudo tee -a /etc/group
     echo "100"
     echo "# Reticulating Final Splines"
-) | 
-zenity --progress --title="uBlue Desktop Firstboot" --percentage=0 --auto-close --no-cancel --width=300
-if [ "$?" != 0 ] ; then
-        zenity --error \
-        --text="Firstboot Configuration Error"
-fi
+# ) | 
+# zenity --progress --title="uBlue Desktop Firstboot" --percentage=0 --auto-close --no-cancel --width=300
+#if [ "$?" != 0 ] ; then
+        #zenity --error \
+        #--text="Firstboot Configuration Error"
+#fi
