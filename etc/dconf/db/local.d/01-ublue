@@ -1,0 +1,33 @@
+[org/gnome/shell] 
+enabled-extensions = ['appindicatorsupport@rgcjonas.gmail.com', 'blur-my-shell@aunetx', 'gsconnect@andyholmes.github.io']
+
+[org/gnome/desktop/background]
+picture-uri='file:///usr/share/backgrounds/lagoon.jpg'
+picture-uri-dark='file:///usr/share/backgrounds/lagoon.jpg'
+picture-options='stretched'
+primary-color='000000'
+secondary-color='FFFFFF'
+
+[org/gnome/desktop/interface]
+font-antialiasing="rgba"
+font-name="Ubuntu 12"
+document-font-name="Ubuntu 12"
+monospace-font-name="Ubuntu Mono 18"
+
+[org/gnome/desktop/wm/preferences]
+button-layout=":minimize,maximize,close"
+title-bar-font="Ubuntu Bold 12"
+
+[org/gnome/desktop/wm/keybindings]
+switch-windows = ['<Alt>Tab']
+
+[org/gnome/desktop/peripherals/touchpad]
+tap-to-click=true
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Control><Alt>t'
+command='flatpak run com.raggesilver.BlackBox'
+name='blackbox'
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']

@@ -28,8 +28,9 @@ COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
 
 # copy and run the build script
 COPY build.sh /tmp/build.sh
-RUN chmod +x /tmp/build.sh && /tmp/build.sh
-
+RUN chmod +x /tmp/build.sh && /tmp/build.sh && \
+    systemctl unmask dconf-update.service && \
+    systemctl enable dconf-update.service
 # clean up and finalize container build
 RUN rm -rf \
         /tmp/* \

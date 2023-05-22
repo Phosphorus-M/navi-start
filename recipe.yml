@@ -41,6 +41,9 @@ rpms:
   - moby-engine
   - docker-compose
   - gnome-shell-extension-gsconnect
+  - gnome-shell-extension-appindicator
+  - gnome-shell-extension-blur-my-shell
+  - gnome-shell-extension-gsconnect
   - nautilus-gsconnect
   - neofetch
   - zsh
@@ -75,3 +78,4 @@ flatpaks:
   - com.github.tchx84.Flatseal
   - io.github.celluloid_player.Celluloid
   - com.github.hluk.copyq
+  - com.raggesilver.BlackBox
