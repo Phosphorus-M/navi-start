@@ -59,6 +59,11 @@ rpms:
   - mold
   - llvm
   - zenity
+  - cascadia-code-fonts
+  - google-droid-sans-mono-fonts
+  - google-go-mono-fonts
+  - ibm-plex-mono-fonts
+  - mozilla-fira-mono-fonts 
 
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.
